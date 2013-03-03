@@ -18,7 +18,7 @@ endif
 common_libs := liblog libutils libcutils libhardware
 
 #Common C flags
-common_flags := -DDEBUG_CALC_FPS -Wno-missing-field-initializers
+common_flags := -DDEBUG_CALC_FPS -Wno-missing-field-initializers -fno-strict-aliasing -Wno-attributes -Wno-sign-compare -Wno-narrowing
 common_flags += -Werror
 
 #TODO
